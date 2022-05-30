@@ -1,0 +1,133 @@
+:root {
+    --primer: #A5C882;
+    --segundo: #b46267;
+    --tercero: #887d7dcc;
+    --cuarto: #000;
+    --quinto: #c9c7c7;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 2;
+    height: 100vh;
+    background-color: var(--quinto);
+}
+
+*:first-letter{
+    text-transform: capitalize;
+}
+
+.cuadro{
+    margin: 25px auto;
+    padding: 25px;
+    background-color: var(--tercero);
+    width: 100%;
+    max-width: 550px;
+    border-radius: 15px;
+}
+
+#titulo{
+    display: grid;
+    align-items: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.fecha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.fech{
+    display: flex;
+    align-items: center;
+}
+
+#numFecha{
+    font-size: 50px;
+}
+
+#textoFecha{ 
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+#textoFecha,
+#numFecha,
+#yearFecha,
+#mesFecha {
+    font-weight: bold;
+}
+
+form{
+    margin: 20px 150px;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: auto 65px auto;
+    grid-column-gap: 5px;
+}
+
+input{
+    background-color: var(--quinto);
+    border: none;
+    border-radius: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.botonNuevaTarea{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+    background-color: var(--primer)
+}
+.editarAllTarea{
+    background-color: var(--primer) !important
+}
+.tarea{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    background-color: var(--quinto);
+    padding: 15px 30px;
+    margin-top: 15px;
+    color: var(--cuarto);
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.tarea .text{
+    word-break: break-all;
+    margin-bottom: 1rem;
+    width: 100%;
+    padding: 1rem;
+}
+.tarea .opc{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.tarea button{
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 35px;
+    border-radius: 5px;
+    color: white;
+    background-color: var(--segundo)
+}
+
+.terminado .text{
+    color: var(--cuarto);
+    text-decoration: line-through;
+    background-color: var(--primer);  
+    font-weight: bold;  
+}
