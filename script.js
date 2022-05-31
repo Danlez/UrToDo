@@ -22,7 +22,7 @@ const eliminar = event => {
     let a = vectorT.map(t=>t.toUpperCase()).indexOf(texto.toUpperCase());
     vectorT.splice(a,1);
     guardarTareas();
-    cargarTareas()
+    cargarTareas();
 }
 
 const editar = event => {
